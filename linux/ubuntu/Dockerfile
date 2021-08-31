@@ -27,10 +27,10 @@ ARG BUILD_TAG
 ARG BUILD_REF="master"
 ARG BUILD_TAG_VERSION="dev"
 
-LABEL org.opencontainers.image.vendor="catthehacker"
+LABEL org.opencontainers.image.vendor="hybridadmin"
 LABEL org.opencontainers.image.authors="me@hackerc.at"
-LABEL org.opencontainers.image.url="https://github.com/catthehacker/docker_images/tree/${BUILD_REF}/linux/${DISTRO}/${TYPE}/"
-LABEL org.opencontainers.image.source="https://github.com/catthehacker/docker_images"
+LABEL org.opencontainers.image.url="https://github.com/hybridadmin/docker_images/tree/${BUILD_REF}/linux/${DISTRO}/${TYPE}/"
+LABEL org.opencontainers.image.source="https://github.com/hybridadmin/docker_images"
 LABEL org.opencontainers.image.version=${BUILD_TAG_VERSION}
 LABEL org.opencontainers.image.title=${BUILD_TAG}-${TARGETARCH}
 LABEL org.opencontainers.image.revision=${BUILD_REF}

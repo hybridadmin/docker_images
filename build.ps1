@@ -1,5 +1,5 @@
 param(
-    $slug = 'catthehacker/ubuntu',
+    $slug = 'hybridadmin/ubuntu',
     $tag,
     $node = '12',
     $distro = 'ubuntu',
@@ -20,7 +20,7 @@ param(
     'build',
     '--progress=plain',
     "--tag=ghcr.io/${slug}:${tag}",
-    "--tag=quay.io/${slug}:${tag}",
+    #"--tag=quay.io/${slug}:${tag}",
     "--tag=docker.io/${slug}:${tag}",
     "--build-arg=NODE_VERSION=${node}",
     "--build-arg=DISTRO=${distro}",
